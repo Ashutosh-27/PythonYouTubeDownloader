@@ -2,6 +2,7 @@
 Terminal Command to install all packages at once : pip install -r ./'Your folder Path'/requirements.txt
 
 Refrence Material :-
+0.Youtube refrence :https://www.youtube.com/playlist?list=PLS4zv4KDAagOwShCgLsN30rYJZg8gvWV9
 1.Tkinter Documentation :https://docs.python.org/3/library/tk.html
 2.Pafy Documentation : https://pythonhosted.org/pafy/
 3.ffmpeg Documentation :https://ffmpeg.org/ffmpeg.html
@@ -9,7 +10,7 @@ Refrence Material :-
 
 
 Pafy is a library of python which helps you to download python video but it has downside it downloads Video(without audio) if video file is selected 
-
+( IN THAT YOUTUBE PLAYLIST IT'S NOT MENTIONED HOW TO FIX THIS DEFAULT BEHAVIOUR OF 'Pafy')
 
 
 
