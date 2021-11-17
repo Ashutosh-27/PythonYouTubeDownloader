@@ -1,0 +1,30 @@
+(NOTE : Please Install all necessary packages mentioned in requirements.txt for execution of code else it will show module error)
+Terminal Command to install all packages at once : pip install -r ./'Your folder Path'/requirements.txt
+
+Refrence Material :-
+
+1.youtube playlist : https://www.youtube.com/watch?v=hgVeV1iP1T4&list=PLS4zv4KDAagOwShCgLsN30rYJZg8gvWV9
+2.Tkinter Documentation :https://docs.python.org/3/library/tk.html
+3.Pafy Documentation : https://pythonhosted.org/pafy/
+4.ffmpeg Documentation :https://ffmpeg.org/ffmpeg.html
+5.moviepy Documentation :https://pypi.org/project/moviepy/
+
+
+Pafy is a library of python which helps you to download python video but it has downside it downloads Video(without audio) if video file is selected 
+
+( IN THAT YOUTUBE PLAYLIST ITS NOT SHOWN HOW TO FIX THIS DEFAULT BEHAVIOUR OF Pafy )
+
+
+So to resolve it :-
+Step 1.
+    When user selects any video file to download 'downloadVideoData()'function is called which downloads that video file and also downloads a audio file by default.
+    (In step2 those audio and video files id merged)
+
+Step2.
+    Initially I used moviepy library functions itself to merge two files but those functions are heavy and required a lot of processing power.
+    So decided to change it . With some research came across to 'ffmpeg' a developer friendly tool to merge files and requires much less processing power.
+    But its very unusual to use ffmpeg tools directly with python So i navigated little more , on this web page (https://dev-qa.com/1909133/how-do-i-use-ffmpeg-moviepy-on-hosting ) 
+    it's mentioned that moviepy library also consist of ffmpeg.
+    line.9 of python file ffmpeg  is imported from moviepy
+ 
+
